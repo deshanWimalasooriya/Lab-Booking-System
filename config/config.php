@@ -23,4 +23,10 @@ if (!function_exists('isLoggedIn')) {
 if (!function_exists('createNotification')) {
     require_once dirname(__DIR__) . '/includes/notification_functions.php';
 }
+
+// Include chat functions
+if (!function_exists('getChatUsers')) {
+    require_once dirname(__DIR__) . '/includes/chat_functions.php';
+}
+
 ?>

@@ -134,6 +134,14 @@ button[style*="position: fixed"][style*="top: 10px"],
                         </div>
                     </li>
                     
+                    <!-- Add this after the notification dropdown -->
+                    <li>
+                        <a href="<?php echo isset($nav_path) ? $nav_path : ''; ?>pages/chat/index.php">
+                            <i class="fas fa-comments"></i> Chat
+                            <span class="chat-badge" id="chatBadge" style="display: none;">0</span>
+                        </a>
+                    </li>
+
                     <!-- User Profile Dropdown -->
                     <li class="dropdown">
                         <a href="#"><i class="fas fa-user"></i> <?php echo $_SESSION['name']; ?> <i class="fas fa-chevron-down"></i></a>
